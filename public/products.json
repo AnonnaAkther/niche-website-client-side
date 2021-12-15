@@ -1,0 +1,45 @@
+[
+    {
+        "id":1,
+        "name":"Acura",
+        "price":5000000,
+        "description":"Acura is the luxury and performance division of Honda Motor Company, Ltd.. The 1990 launch of the NSX, a mid-engine exotic sports car, offered a reliable and practical alternative to exotic European sports cars, and introduced Honda's VTEC variable valve timing system to the North American market. .",
+        "img":"https://i.ibb.co/26QWt0Q/blue-sport-sedan-parked-yard-114579-5078.webp"
+        },
+        {
+            "id":2,
+            "name":"Audi",
+            "price":4500000,
+            "description":"German Engineer August Horch founded the company August Horch & Cie. Motorwagenwerke AG, in 1899. Due to misunderstandings among partners, Horch left the company and formed a new company, August Horch Automobilwerke GmbH in 1909. ",
+            "img":"https://i.ibb.co/CHsB1mf/car-led-lights-realistic-composition-with-dark-silhouette-automobile-with-dimmed-headlights-shadows.webp"
+            },
+            {
+                "id":3,
+                "name":"Bentely",
+                "price":3800000,
+                "description":"Bentley Motors was founded by W.O. Bentley. The first car to bear his name pulled out of New Street Mews, London in 1919. ... Located in Crewe, England and owned by Volkswagen AG since 1998, Bentley Motors remains the definitive British luxury car company, crafting the world's most desirable high performance grand tourers.",
+                "img":"https://i.ibb.co/yfkSg4W/red-luxury-sedan-road-114579-5079.webp"
+                },
+                {
+                    "id":4,
+                    "name":"Buick",
+                    "price":2500000,
+                    "description":"Buick (/ˈbjuːɪk/) is a division of the American automobile manufacturer General Motors (GM). ... For much of its existence in the North American market, Buick has been marketed as a premium automobile brand, selling luxury vehicles positioned above GM's mainstream brands, while below the flagship luxury Cadillac division.",
+                    "img":"https://i.ibb.co/kMW5S1g/sporting-car-illustration-104045-995.webp"
+                    },
+                    {
+                        "id":5,
+                        "name":"Cadillac",
+                        "price":5100000,
+                        "description":"Cadillac was named after the great French explorer Antoine Laumet de La Mothe, Sieur de Cadillac, who founded Detroit, Michigan in 1701.                        Cadillac is one of the earliest car brands in the US. Founded in 1902, it is known for manufacturing luxury cars. However, the company was later taken over by General Motors in 1909.",
+                        "img":"https://i.ibb.co/1qLk5NX/white-coupe-sport-car-parking-bridge-114579-4006.webp"
+                        },
+                        {
+                            "id":6,
+                            "name":"Mercedes",
+                            "price":3900000,
+                            "description":"Mercedes-Benz traces its origins to Karl Benz, who created the first internal combustion engine used in a car, the Benz Patent Motorwagen, in 1886; and to the Daimler-Motoren-Gesellschaft (DMG), founded by Gottlieb Daimler. Mercedes was a brand built by DMG, who registered the name in 1902. It had originally been applied to an automobile model built by Wilhelm Maybach in 1900. The model contained a newly designed engine designated the Daimler-Mercedes",
+                            "img":"https://i.ibb.co/Pr0jrwv/white-sport-car-176382-1594.webp"
+                        }
+
+]         
