@@ -5,10 +5,9 @@ import Products from '../Products/Products';
 
 const Home = () => {
     return (
-        <div>
+        <div id="home">
             <Banner></Banner>
             <Products></Products>
-            <Explored></Explored>
 
         </div>
     );

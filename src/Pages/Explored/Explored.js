@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Explore from '../Explore/Explore';
 
 const explored = [
@@ -77,8 +77,8 @@ const explored = [
 
 const Explored = () => {
     return (
-        <div id="explore" className="text-danger text-center mt-5 mb-5">
-            <h2>Explore</h2>
+        <div className="text-danger text-center mt-5 mb-5">
+            <h2>Explore Items</h2>
              <div className="text-primary bg-lightblue">
                  {
                      explored.map(explore => <Explore
