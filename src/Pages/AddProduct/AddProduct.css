@@ -1,0 +1,14 @@
+.addProduct form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(223, 223, 167);
+}
+.addProduct form input, textarea{
+    width: 40%;
+    margin-bottom: 10px;
+}
+.addProduct form h2{
+    margin-bottom: 10px;
+}

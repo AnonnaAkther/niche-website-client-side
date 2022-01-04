@@ -1,14 +1,14 @@
 import React from 'react';
 import { useState } from 'react';
 import { Button, Col, Form, Row, Spinner, Alert } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 const Register = () => {
     const [loginData, setLoginData] = useState({});
-
+    const history = useHistory();
     const { user, registerUser, loading, error} = useAuth();
 
-    const handleOnChange = e => {
+    const handleOnBlur = e => {
         const field = e.target.name;
         const value = e.target.value;
         const newLoginData = {...loginData};
@@ -22,7 +22,7 @@ const Register = () => {
             alert('Your password did not match');
             return
         }
-        registerUser(loginData.email, loginData.password);
+        registerUser(loginData.email, loginData.password,loginData.name, history);
         e.preventDefault();
     }
     return (
@@ -37,7 +37,7 @@ const Register = () => {
                 <Form.Control 
                 type="name" 
                 name="name"
-                onChange={handleOnChange}
+                onBlur={handleOnBlur}
                 placeholder="Your Name"/>
                 </Col>
             </Form.Group>
@@ -49,7 +49,7 @@ const Register = () => {
                 <Form.Control 
                 type="email" 
                 name="email"
-                onChange={handleOnChange}
+                onBlur={handleOnBlur}
                 placeholder="Enter Email"/>
                 </Col>
             </Form.Group>
@@ -61,7 +61,7 @@ const Register = () => {
                 <Form.Control 
                 type="password" 
                 name="password"
-                onChange={handleOnChange}
+                onBlur={handleOnBlur}
                 placeholder="Password"/>
                 </Col>
             </Form.Group>
@@ -73,7 +73,7 @@ const Register = () => {
                 <Form.Control 
                 type="password" 
                 name="confirmPassword"
-                onChange={handleOnChange}
+                onBlur={handleOnBlur}
                 placeholder="Confirm Your Password"/>
                 </Col>
             </Form.Group>

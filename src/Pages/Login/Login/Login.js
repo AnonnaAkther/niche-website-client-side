@@ -1,13 +1,17 @@
 import React from 'react';
 import { useState } from 'react';
 import { Alert, Button, Col, Form, Row, Spinner } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import './Login.css';
 
 const Login = () => {
     const {user,loginUser, loading, error} = useAuth();
     const [loginData, setLoginData] = useState({})
+
+    const location = useLocation();
+    const history = useHistory();
+
     const handleOnChange = e => {
         const field = e.target.name;
         const value = e.target.value;
@@ -17,7 +21,7 @@ const Login = () => {
     }
     
     const handleLoginSubmit = e => {
-        loginUser(loginData.email, loginData.password);
+        loginUser(loginData.email, loginData.password, location, history);
         e.preventDefault();
     }
 
@@ -33,7 +37,7 @@ const Login = () => {
                     <Form.Control 
                     type="email" 
                     name="email"
-                    onChange={handleOnChange}
+                    onBlur={handleOnChange}
                     placeholder="Enter Email"/>
                     </Col>
                 </Form.Group>
@@ -45,7 +49,7 @@ const Login = () => {
                     <Form.Control 
                     type="password" 
                     name="password"
-                    onChange={handleOnChange}
+                    onBlur={handleOnChange}
                     placeholder="Password"/>
                     </Col>
                 </Form.Group>

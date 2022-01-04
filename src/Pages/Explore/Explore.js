@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Explore.css';
 
 const Explore = ({explore}) => {
@@ -9,6 +10,7 @@ const Explore = ({explore}) => {
             <h3>{name}</h3>
             <h5>Price: {price}</h5>
             <p>{description}</p>
+            <Link to="/cart"><button className="bg-warning m-5 p-3">Buy Now</button></Link>
         </div>
     );
 };

@@ -77,7 +77,7 @@ const explored = [
 
 const Explored = () => {
     return (
-        <div className="text-danger text-center mt-5 mb-5">
+        <div className="text-primary text-center mt-5 mb-5">
             <h2>Explore Items</h2>
              <div className="text-primary bg-lightblue">
                  {
