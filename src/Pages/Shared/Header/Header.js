@@ -17,10 +17,13 @@ const Header = () => {
             <Nav.Link as={Link} to="/home#products">Products</Nav.Link>
             <Link style={{paddingRight: '10px', textDecoration: 'none'}} to="/addProduct">AddProduct</Link>
             <Link style={{paddingRight: '10px', textDecoration: 'none'}} to="/manageProducts">Manage Products</Link>
-            <Link style={{paddingRight: '10px', textDecoration: 'none'}} to="/review">Review</Link>
+            <Nav.Link style={{paddingRight: '10px', textDecoration: 'none'}} to="/home#review">Review</Nav.Link>
             <Link style={{paddingRight: '10px', textDecoration: 'none'}} to="/explore">Explore</Link>
                 {user?.email ?
-                  <Button onClick={logout} variant="primary">Logout</Button>:
+                <div>
+                  <NavLink as={Link} to="/dashboard">Dashboard</NavLink>
+                  <Button onClick={logout} variant="primary">Logout</Button>
+                  </div>:
                   <NavLink as={Link} to="/login">Login</NavLink>
                   }
             </Navbar.Collapse>

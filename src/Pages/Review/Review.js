@@ -20,8 +20,8 @@ const Review = () => {
         })
     }
     return (
-        <div className="review">
-            <h2 className="text-primary text-center">Please Review</h2>
+        <div className="review" id="review">
+            <h2 className="text-primary mt-5 text-center">Please Review</h2>
             <form className="field" onSubmit={handleSubmit(onSubmit)}>
                 <input {...register("name", { required: true, maxLength: 20 })} placeholder="Name" />
                 <textarea {...register("description")} placeholder="Description" />

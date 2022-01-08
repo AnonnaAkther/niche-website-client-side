@@ -3,14 +3,17 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from '../src/Pages/Home/Home/Home';
 import AuthProvider from './contexts/AuthProvider/AuthProvider';
 import AddProduct from './Pages/AddProduct/AddProduct';
+import AwesomeProducts from './Pages/AwesomeProducts/AwesomeProducts';
 import Cart from './Pages/Cart/Cart/Cart';
+import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
+import MakeAdmin from './Pages/Dashboard/MakeAdmin/MakeAdmin';
 import Explored from './Pages/Explored/Explored';
-import Footer from './Pages/Footer/Footer';
 import Login from './Pages/Login/Login/Login';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Register from './Pages/Login/Register/Register';
 import ManageProducts from './Pages/ManageProducts/ManageProducts';
 import NotFound from './Pages/NotFound/NotFound';
+import Payment from './Pages/Payment/Payment';
 import Review from './Pages/Review/Review';
 import Header from './Pages/Shared/Header/Header';
 
@@ -45,6 +48,18 @@ function App() {
          <Route path="/review">
            <Review></Review>
          </Route>
+         <Route path="/awesomeProducts">
+           <AwesomeProducts></AwesomeProducts>
+         </Route>
+         <Route path="/makeAdmin">
+           <MakeAdmin></MakeAdmin>
+         </Route>
+         <Route path="/dashboard">
+           <Dashboard></Dashboard>
+         </Route>
+         <Route path="/pay">
+           <Payment></Payment>
+         </Route>
          <Route path="/manageProducts">
            <ManageProducts></ManageProducts>
          </Route>
@@ -52,7 +67,6 @@ function App() {
            <NotFound></NotFound>
          </Route>
        </Switch>
-       <Footer></Footer>
      </Router>
      </AuthProvider>
     </div>

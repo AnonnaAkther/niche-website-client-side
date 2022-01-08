@@ -1,0 +1,10 @@
+.inputGroup{
+   align-items: center;
+   margin-top: 50px;
+   margin-right: 10px;
+   margin-left: 30%;
+   border: 2px solid rgb(96, 106, 244);
+   border-radius: 5px;
+   height: 40px;
+   width: 30%;
+}
